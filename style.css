@@ -46,10 +46,10 @@ section {
     border-radius: 24px;
     color: #52a447;
     padding: 20px;
-    width: 400px; /* Ajuste conforme necessário */
-    height: 300px; /* Ajuste conforme necessário */
+    width: 400px;
+    height: 300px;
     overflow: hidden;
-    position: relative; /* Necessário para que o aviso fique sobre a caixa */
+    position: relative;
 }
 
 .aviso {
@@ -81,12 +81,10 @@ section {
     margin-top: 10px;
 }
 
-/* Mostrar aviso apenas se a caixa de mensagem estiver vazia */
 .mensagem:empty ~.aviso {
     display: flex;
 }
 
-/* Esconder o aviso quando há texto na caixa de mensagem */
 .mensagem:not(:empty) ~ .aviso {
     display: none;
 }
